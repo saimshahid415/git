@@ -1,0 +1,78 @@
+<link href="https://css.gg/css" rel="stylesheet">
+
+<link rel="stylesheet" href="icons.css">
+
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+header{
+    height: 40px;
+    background-color: green;
+    color: white;
+}
+
+ol{
+    display: flex;
+    list-style: none;
+    width: 50%;
+    float: right;
+
+}
+
+li{
+    flex-grow: 1;
+    line-height:40px;
+}
+
+.desktop-menu{
+display: none;
+}
+
+
+
+.gg-menu{
+    display: none;    
+    top:20px;
+    position: absolute;
+    right: 18px;
+}
+
+
+@media screen and (min-width:601px) {
+    
+    .desktop-menu{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    
+    .gg-menu{
+        display: block;
+    }
+
+}
+
+
+</style>
+
+
+<header>
+
+    <ol>
+        <li class="desktop-menu">home</li>
+        <li class="desktop-menu">login</li>
+        <li class="desktop-menu">signup</li>
+        <li class="desktop-menu">dashboard</li>
+        <li class="desktop-menu">contact us</li>
+        <li>
+            <i class="gg-menu"></i>
+        </li>
+   </ol>
+</header>
